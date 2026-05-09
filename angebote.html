@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anfrage stellen | Kuhnert Autoverwertung</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><img src="assets/logo.png" alt="Kuhnert Autoverwertung Logo" /><span><span class="brand-kicker">Autoverwertung</span><strong>O. KUHNERT</strong><small>GmbH & Co. KG</small></span></a>
+      <nav class="main-nav" aria-label="Hauptnavigation"><a href="index.html">Startseite</a><a href="autoabholung.html">Autoabholung</a><a href="ersatzteile.html">Ersatzteile</a><a href="schrott-metalle.html">Schrott</a><a href="ueber-uns.html">Über uns</a><a href="angebote.html" aria-current="page">Anfrage</a></nav>
+      <div class="header-actions"><a class="phone-block" href="tel:+495174800125"><span class="icon">☏</span><span><b>05174 800125</b><small>Mo-Fr, 09:00-17:00 Uhr</small></span></a><a class="button" href="tel:+495174800125">Anrufen</a></div>
+    </header>
+    <main class="form-page">
+      <section class="section">
+        <div class="center">
+          <span class="label">Kontakt & Angebot</span>
+          <h1 class="accent">Anfrage stellen</h1>
+        </div>
+        <div class="form-wrap">
+          <aside class="form-intro">
+            <h2>Autoabholung, Entsorgung oder Ersatzteil?</h2>
+            <p>Teilen Sie uns die wichtigsten Daten mit. Wir melden uns schnell zurück und klären Preis, Abholung, Verfügbarkeit oder den passenden Termin.</p>
+            <p>Für eine Autoabholung sind Marke, Modell, Baujahr, Standort, Rollfähigkeit und Abmeldung besonders hilfreich.</p>
+          </aside>
+          <form class="request-form" id="request-form" action="mailto:info@auto-verwertung.eu" method="post" enctype="text/plain">
+            <div class="field"><label for="name">Name *</label><input id="name" name="Name" required /></div>
+            <div class="field"><label for="telefon">Telefon *</label><input id="telefon" name="Telefon" required /></div>
+            <div class="field"><label for="email">E-Mail *</label><input id="email" name="E-Mail" type="email" required /></div>
+            <div class="field"><label for="art">Anfrageart *</label><select id="art" name="Anfrageart" required><option>Ersatzteilanfrage</option><option>Autoabholung / Entsorgung</option><option>Schrott & Metalle</option><option>Fahrzeugankauf</option></select></div>
+            <div class="field"><label for="marke">Automarke</label><input id="marke" name="Automarke" /></div>
+            <div class="field"><label for="modell">Modell / Typ</label><input id="modell" name="Modell / Typ" /></div>
+            <div class="field"><label for="baujahr">Baujahr</label><input id="baujahr" name="Baujahr" /></div>
+            <div class="field"><label for="rollfaehig">Rollfähig</label><select id="rollfaehig" name="Rollfähig"><option>Ja / Nein</option><option>Ja</option><option>Nein</option></select></div>
+            <div class="field"><label for="abgemeldet">Abgemeldet</label><select id="abgemeldet" name="Abgemeldet"><option>Ja / Nein</option><option>Ja</option><option>Nein</option></select></div>
+            <div class="field"><label for="standort">Standort *</label><input id="standort" name="Standort" placeholder="PLZ Ort" required /></div>
+            <div class="field full"><label for="nachricht">Ihre Nachricht *</label><textarea id="nachricht" name="Nachricht" required></textarea></div>
+            <div class="field"><button class="button" type="submit">Anfrage senden</button></div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><img src="assets/logo.png" alt="" /><p><a href="impressum.html">Impressum</a><br /><a href="datenschutz.html">Datenschutzerklärung</a></p><p><a href="https://www.google.com/maps/search/?api=1&query=Bierstra%C3%9Fe%201%2031246%20Ilsede">Wegbeschreibung</a></p></footer>
+    <script src="assets/mailto.js"></script>
+  </body>
+</html>

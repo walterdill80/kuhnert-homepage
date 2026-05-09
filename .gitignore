@@ -1,0 +1,8 @@
+.DS_Store
+.playwright-mcp/
+.vercel/
+
+# Design/export artifacts, not needed for production hosting
+mockups/
+kuhnert-*.png
+
