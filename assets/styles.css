@@ -2093,3 +2093,58 @@ textarea {
     display: block;
   }
 }
+
+/* Final hero and icon refinements */
+.onepage-hero {
+  min-height: 620px;
+  padding-bottom: 72px;
+  background-image:
+    radial-gradient(circle at 48% 58%, rgba(114, 191, 68, 0.18), transparent 34%),
+    linear-gradient(180deg, rgba(7, 11, 10, 0.24), rgba(7, 11, 10, 0.78) 100%),
+    linear-gradient(90deg, rgba(7, 11, 10, 0.78), rgba(7, 11, 10, 0.16), rgba(7, 11, 10, 0.72)),
+    url("yard-aerial.jpg");
+}
+
+.onepage-hero::after {
+  display: none;
+}
+
+.onepage-hero p {
+  color: #f3f7f4;
+  opacity: 0.96;
+}
+
+.onepage-hero-facts span {
+  color: #eef4ef;
+}
+
+#vorteile {
+  padding-top: 86px;
+}
+
+.onepage-feature-grid i,
+.onepage-service-grid i,
+.onepage-trust-grid i {
+  width: 62px;
+  height: 62px;
+  border: 0;
+  border-radius: 10px;
+  background: #28ad98;
+  color: #fff;
+}
+
+.onepage-feature-grid i img,
+.onepage-service-grid i img,
+.onepage-trust-grid i img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.onepage-trust-grid i {
+  background: #e5f4f1;
+}
+
+.onepage-trust-grid i img {
+  filter: brightness(0) saturate(100%) invert(50%) sepia(62%) saturate(596%) hue-rotate(125deg) brightness(93%) contrast(91%);
+}
