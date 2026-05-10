@@ -2691,3 +2691,104 @@ textarea {
     margin-top: 28px;
   }
 }
+
+/* Restore the original dark hero; keep only the corrected buttons and icon cards */
+.onepage-header {
+  background: rgba(9, 14, 13, 0.94);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.onepage-nav a {
+  color: #f6f8f4;
+}
+
+.onepage-logo span {
+  display: grid;
+  color: #f7fbf6;
+}
+
+.onepage-logo small {
+  color: #b9c7c0;
+}
+
+.onepage-header .onepage-logo img {
+  width: 48px;
+  height: 48px;
+  filter: none;
+}
+
+.onepage-header-button {
+  background: linear-gradient(135deg, #95db4f, #72bf44);
+  color: #061009;
+}
+
+.onepage-hero {
+  min-height: 760px;
+  padding: 110px 24px 96px;
+  background-image:
+    radial-gradient(circle at 48% 58%, rgba(114, 191, 68, 0.18), transparent 34%),
+    linear-gradient(180deg, rgba(7, 11, 10, 0.24), rgba(7, 11, 10, 0.78) 100%),
+    linear-gradient(90deg, rgba(7, 11, 10, 0.78), rgba(7, 11, 10, 0.16), rgba(7, 11, 10, 0.72)),
+    url("yard-aerial.jpg");
+  background-position: center top;
+  background-size: cover;
+  color: #fff;
+}
+
+.onepage-hero-content {
+  padding-top: 38px;
+}
+
+.onepage-hero .onepage-kicker {
+  border-color: rgba(149, 219, 79, 0.24);
+  background: rgba(149, 219, 79, 0.1);
+  color: #95db4f;
+}
+
+.onepage-hero h1 {
+  color: #fff;
+}
+
+.onepage-hero h1 span {
+  color: #95db4f;
+}
+
+.onepage-hero p {
+  color: #f3f7f4;
+}
+
+.onepage-hero-actions .onepage-button {
+  background: linear-gradient(135deg, #95db4f, #72bf44);
+  color: #061009;
+}
+
+.onepage-hero-actions .onepage-button.secondary {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.32);
+  color: #111a17;
+}
+
+.onepage-hero-facts div {
+  background: rgba(255, 255, 255, 0.92);
+}
+
+@media (max-width: 640px) {
+  .onepage-header {
+    background: rgba(9, 14, 13, 0.94);
+  }
+
+  .onepage-logo b,
+  .onepage-logo small {
+    display: none;
+  }
+
+  .onepage-header .onepage-logo img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .onepage-hero {
+    min-height: 760px;
+    padding: 86px 18px 56px;
+  }
+}
