@@ -2495,3 +2495,199 @@ textarea {
     font-size: 19px;
   }
 }
+
+/* Requested hero layout: CTA and benefit cards inside the hero */
+.onepage-header {
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 1px 0 rgba(17, 26, 23, 0.08);
+}
+
+.onepage-nav a {
+  color: #506075;
+}
+
+.onepage-logo span {
+  display: none;
+}
+
+.onepage-header .onepage-logo img {
+  width: 42px;
+  height: 42px;
+  filter: brightness(0) saturate(100%);
+}
+
+.onepage-header-button {
+  background: #28ad98;
+  color: #fff;
+}
+
+.onepage-hero {
+  display: grid;
+  min-height: 760px;
+  place-items: center;
+  padding: 98px 24px 96px;
+  background-image:
+    linear-gradient(180deg, rgba(247, 249, 248, 0.9), rgba(247, 249, 248, 0.76) 46%, rgba(247, 249, 248, 0.96) 100%),
+    url("yard-aerial.jpg");
+  background-position: center 42%;
+  background-size: cover;
+  color: var(--one-ink);
+}
+
+.onepage-hero-content {
+  width: min(980px, 100%);
+  max-width: 980px;
+  padding-top: 38px;
+  text-align: center;
+}
+
+.onepage-hero .onepage-kicker {
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  height: 30px;
+  margin-bottom: 22px;
+  padding: 0 18px;
+  border: 1px solid rgba(40, 173, 152, 0.26);
+  border-radius: 999px;
+  background: rgba(40, 173, 152, 0.12);
+  color: #28ad98;
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.onepage-hero h1 {
+  max-width: 920px;
+  color: var(--one-ink);
+  font-size: clamp(48px, 6vw, 78px);
+  line-height: 0.96;
+  text-shadow: none;
+}
+
+.onepage-hero h1 span {
+  color: #28ad98;
+}
+
+.onepage-hero p {
+  max-width: 720px;
+  color: #506075;
+  font-size: clamp(17px, 1.7vw, 22px);
+  opacity: 1;
+}
+
+.onepage-hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.onepage-hero-actions .onepage-button {
+  width: auto;
+  min-width: 190px;
+  min-height: 54px;
+  padding: 0 30px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background: #28ad98;
+  color: #fff;
+  box-shadow: 0 12px 26px rgba(40, 173, 152, 0.2);
+}
+
+.onepage-hero-actions .onepage-button.secondary {
+  min-width: 260px;
+  background: rgba(255, 255, 255, 0.9);
+  border-color: #dfe7e2;
+  color: var(--one-ink);
+  box-shadow: 0 12px 26px rgba(17, 26, 23, 0.08);
+}
+
+.onepage-hero-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: min(880px, 100%);
+  max-width: 880px;
+  margin: 44px auto 0;
+  padding: 0;
+  gap: 14px;
+  background: none;
+}
+
+.onepage-hero-facts div {
+  min-height: 66px;
+  padding: 13px 16px;
+  grid-template-columns: 30px 1fr;
+  gap: 12px;
+  border: 1px solid #dfe7e2;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 12px 30px rgba(17, 26, 23, 0.08);
+}
+
+.onepage-hero-facts i {
+  width: 28px;
+  height: 28px;
+  border: 0;
+  background: transparent;
+}
+
+.onepage-hero-facts i img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) saturate(100%) invert(50%) sepia(62%) saturate(596%) hue-rotate(125deg) brightness(93%) contrast(91%);
+}
+
+.onepage-hero-facts b {
+  color: var(--one-ink);
+  font-size: 16px;
+  font-weight: 650;
+  line-height: 1.22;
+}
+
+#vorteile {
+  padding-top: 96px;
+}
+
+@media (max-width: 980px) {
+  .onepage-hero-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(620px, 100%);
+  }
+}
+
+@media (max-width: 640px) {
+  .onepage-header {
+    background: rgba(255, 255, 255, 0.96);
+  }
+
+  .onepage-hero {
+    min-height: 760px;
+    padding: 86px 18px 56px;
+  }
+
+  .onepage-hero-content {
+    padding-top: 20px;
+  }
+
+  .onepage-hero h1 {
+    font-size: 42px;
+  }
+
+  .onepage-hero-actions {
+    display: grid;
+  }
+
+  .onepage-hero-actions .onepage-button,
+  .onepage-hero-actions .onepage-button.secondary {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .onepage-hero-facts {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-top: 28px;
+  }
+}
