@@ -1,0 +1,6 @@
+.git
+.gitignore
+.playwright-mcp
+.vercel
+mockups
+kuhnert-*.png
